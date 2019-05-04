@@ -4,9 +4,9 @@ import java.net.URISyntaxException;
 import java.nio.file.*;
 import java.util.Collections;
 
-public class FileUtils {
+class FileUtils {
 
-    public static String getResourceContents(String resource) {
+    static String getResourceContents(String resource) {
         try {
             Path resourcePath = getResourceAsPath(resource);
             return getPathContents(resourcePath);
